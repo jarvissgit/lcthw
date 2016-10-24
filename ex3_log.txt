@@ -1,0 +1,91 @@
+==19178== Memcheck, a memory error detector
+==19178== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==19178== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==19178== Command: ./ex3
+==19178== 
+==19178== Use of uninitialised value of size 4
+==19178==    at 0x409D21B: _itoa_word (_itoa.c:179)
+==19178==    by 0x40A0928: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409D223: _itoa_word (_itoa.c:179)
+==19178==    by 0x40A0928: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DECE: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DF3B: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x40A1C66: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DF84: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DFBD: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x8048439: main (ex3.c:9)
+==19178== 
+==19178== Use of uninitialised value of size 4
+==19178==    at 0x409D21B: _itoa_word (_itoa.c:179)
+==19178==    by 0x40A0928: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409D223: _itoa_word (_itoa.c:179)
+==19178==    by 0x40A0928: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DECE: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DF3B: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x40A1C66: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DF84: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+==19178== Conditional jump or move depends on uninitialised value(s)
+==19178==    at 0x409DFBD: vfprintf (vfprintf.c:1660)
+==19178==    by 0x40A743E: printf (printf.c:33)
+==19178==    by 0x804844D: main (ex3.c:10)
+==19178== 
+I am -1096577212 years old.
+I am 69226496 inches tall.
+==19178== 
+==19178== HEAP SUMMARY:
+==19178==     in use at exit: 0 bytes in 0 blocks
+==19178==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==19178== 
+==19178== All heap blocks were freed -- no leaks are possible
+==19178== 
+==19178== For counts of detected and suppressed errors, rerun with: -v
+==19178== Use --track-origins=yes to see where uninitialised values come from
+==19178== ERROR SUMMARY: 46 errors from 14 contexts (suppressed: 0 from 0)
